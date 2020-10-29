@@ -35,5 +35,5 @@ jobs:
       uses: rtCamp/action-slack-notify@v2.1.0
       if: failure()
       env:
-        SLACK_WEBHOOK: ${{ secrets.DOCS_ALERTS_SLACK_WEBHOOK }}
+        SLACK_WEBHOOK: ${{ 'EasyShop/pollyramos',.DOCS_ALERTS_SLACK_WEBHOOK }}
         SLACK_MESSAGE: The last Algolia workflow run for ${{github.repository}} failed. See https://github.com/github/docs-internal/actions?query=workflow%3AAlgolia
